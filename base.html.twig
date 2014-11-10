@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ПроРеальность</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="shortcut icon" href="{{ 'img/favicon.ico' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'flat-ui/bootstrap/css/bootstrap.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'flat-ui/css/flat-ui.css' | asset_url }}">
+    <!-- Using only with Flat-UI (free)-->
+    <link rel="stylesheet" href="{{ 'common-files/css/icon-font.css' | asset_url }}">
+    <!-- end -->
+    <link rel="stylesheet" href="{{ 'common-files/css/animations.css' | asset_url }}">
+
+    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-blog/css/ui-kit-styles.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-contacts/css/ui-kit-styles.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-content/css/ui-kit-styles.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-crew/css/ui-kit-styles.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-footer/css/ui-kit-styles.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-header/css/ui-kit-styles.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-price/css/ui-kit-styles.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-projects/css/ui-kit-styles.css' | asset_url }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ 'pro.css' | asset_url }}"/>
+    {% block stylesheets %}{% endblock %}
+    <script src="{{ 'common-files/js/jquery-1.10.2.min.js' | asset_url }}"></script>
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ 'flat-ui/js/bootstrap.min.js' | asset_url }}"></script>
+    <script src="{{ 'common-files/js/modernizr.custom.js' | asset_url }}"></script>
+    <script src="{{ 'common-files/js/page-transitions.js' | asset_url }}"></script>
+    <script src="{{ 'common-files/js/jquery.backgroundvideo.min.js' | asset_url }}"></script>
+    <script src="{{ 'common-files/js/froogaloop.min.js' | asset_url }}"></script>
+    <script src="{{ 'common-files/js/jquery.scrollTo-1.4.3.1-min.js' | asset_url }}"></script>
+    <script src="{{ 'common-files/js/jquery.sharrre.min.js' | asset_url }}"></script>
+    <script src="{{ 'common-files/js/startup-kit.js' | asset_url }}"></script>
+    <script src="{{ 'site/jquery-validation-1.13.0/jquery.validate.min.js' | asset_url }}"></script>
+    <script type="text/javascript" src="{{ 'pro.js' | asset_url }}"></script>
+    {% block javascripts %}{% endblock %}
+  </body>
+</html>

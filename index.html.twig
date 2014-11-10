@@ -1,77 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>ПроРеальность</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="shortcut icon" href="{{ 'img/favicon.ico' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'flat-ui/bootstrap/css/bootstrap.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'flat-ui/css/flat-ui.css' | asset_url }}">
-    <!-- Using only with Flat-UI (free)-->
-    <link rel="stylesheet" href="{{ 'common-files/css/icon-font.css' | asset_url }}">
-    <!-- end -->
-    <link rel="stylesheet" href="{{ 'common-files/css/animations.css' | asset_url }}">
+{% extends 'layout.html.twig' %}
 
-    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-blog/css/ui-kit-styles.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-contacts/css/ui-kit-styles.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-content/css/ui-kit-styles.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-crew/css/ui-kit-styles.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-footer/css/ui-kit-styles.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-header/css/ui-kit-styles.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-price/css/ui-kit-styles.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'ui-kit/ui-kit-projects/css/ui-kit-styles.css' | asset_url }}">
-
-    <style type="text/css">
-      body {
-        padding-top: 0;
-      }
-      /* flex video */
-      .flex-video {
-        position: relative;
-        padding-top: 25px;
-        padding-bottom: 67.5%;
-        height: 0;
-        margin-bottom: 16px;
-        overflow: hidden;
-        }
-       
-      .flex-video.widescreen { padding-bottom: 57.25%; }
-      .flex-video.vimeo { padding-top: 0; }
-       
-      .flex-video iframe,
-      .flex-video object,
-      .flex-video embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-      @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-        .flex-video { padding-top: 0; }
-      }
-    </style>
-    <script src="{{ 'common-files/js/jquery-1.10.2.min.js' | asset_url }}"></script>
-  </head>
-  <body>
-    <header class="header-8">
-      <div class="container">
-        <div class="row">
-          <div class="navbar col-sm-12" role="navigation">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle"></button>
-              <a class="brand" href="index.html#">
-                <img src="http://prorealnost.local.ic/uploads/prorealnost/textlogo-standing-transparent.png" style="margin-top:0; width:255px; height:41px;" alt=""></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-background"></div>
-    </header>
-
-    {% block content %}
+{% block content %}
 <section class="header-8-sub bg-midnight-blue" style="min-height:450px;">
   <div class="background">&nbsp;</div>
   <div class="container">
@@ -86,37 +15,37 @@
 </section>
 
 <!-- content-10 -->
-      <section class="content-10">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <h3>Глубокие результаты в наиболее важных для тебя областях</h3>
-              <p>Будь то близкие отношения, бизнес, личная эффективность, самореализация, способность менять окружающий мир к лучшему... И со временем эти результаты будут только увеличиваться.</p>
-              <div class="features">
-                <div class="box">
-                  <img src="{{ 'common-files/icons/banner@2x.png' | asset_url }}" width="100" height="100" alt="">
-                  <h6>Почувствуй свободу</h6>
-                  <p>Свободу с лёгкостью справляться с любыми обстоятельствами.
-                  </p>
-                </div>
-                <div class="box">
-                  <img src="{{ 'common-files/icons/bulb@2x.png' | asset_url }}" width="100" height="100" alt="">
-                  <h6>Создай эффективность</h6>
-                  <p>Небывалую эффективность в действительно важных для тебя областях.</p>
-                </div>
-                <div class="box">
-                  <img src="{{ 'common-files/icons/goal@2x.png' | asset_url }}" width="100" height="100" alt="">
-                  <h6>Открой силу</h6>
-                  <p>Удивительную силу получать по-настоящему ценные результаты в своей жизни.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 text-center">
-              <img src="http://prorealnost.local.ic/uploads/prorealnost/prorealnost_aeroplan.jpg" alt="">
-            </div>
+<section class="content-10">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Глубокие результаты в наиболее важных для тебя областях</h3>
+        <p>Будь то близкие отношения, бизнес, личная эффективность, самореализация, способность менять окружающий мир к лучшему... И со временем эти результаты будут только увеличиваться.</p>
+        <div class="features">
+          <div class="box">
+            <img src="{{ 'common-files/icons/banner@2x.png' | asset_url }}" width="100" height="100" alt="">
+            <h6>Почувствуй свободу</h6>
+            <p>Свободу с лёгкостью справляться с любыми обстоятельствами.
+            </p>
+          </div>
+          <div class="box">
+            <img src="{{ 'common-files/icons/bulb@2x.png' | asset_url }}" width="100" height="100" alt="">
+            <h6>Создай эффективность</h6>
+            <p>Небывалую эффективность в действительно важных для тебя областях.</p>
+          </div>
+          <div class="box">
+            <img src="{{ 'common-files/icons/goal@2x.png' | asset_url }}" width="100" height="100" alt="">
+            <h6>Открой силу</h6>
+            <p>Удивительную силу получать по-настоящему ценные результаты в своей жизни.</p>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="col-sm-6 text-center">
+        <img src="http://prorealnost.local.ic/uploads/prorealnost/prorealnost_aeroplan.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- content-5 -->
 <section class="content-5" style="border-top: 2px solid #EBEDEE; padding-bottom: 0;">
@@ -136,32 +65,6 @@
   </div>
 </section>
 
-<style>
-.content-3 .container {
-  margin-top: 120px;
-}
-.content-3.a .quote {
-  padding-left: 10px;
-}
-.content-3.a .quote p {
-  font-size: 20px;
-  font-weight: 300;
-  color: #2c3e50;
-}
-.content-3.a .quote:before {
-  content: '';
-  background: url("{{ 'common-files/icons/quote-up-mb@2x.png' | asset_url }}") no-repeat;
-  -webkit-background-size: 16px 10px;
-  -moz-background-size: 16px 10px;
-  -o-background-size: 16px 10px;
-  background-size: 16px 10px;
-  position: absolute;
-  width: 16px;
-  height: 10px;
-  top: 10px;
-  left: 0px;
-}
-</style>
 <!-- content-3 -->
 <section class="content-3 a" style="padding-top: 0;">
   <div>
@@ -274,39 +177,10 @@
     </div>
   </div>
 </section>
-<style type="text/css">
-  .content-more .divider {
-    margin-bottom: 50px;
-  }
 
-  .content-more .btn.btn-clear {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: none;
-    border: 2px solid #34495e;
-    font-size: 14px;
-    font-weight: normal;
-    font-weight: 500;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 12px 28px 12px;
-    color: #34495e;
-  }
-  .content-more .btn.btn-clear:hover,
-  .content-more .btn.btn-clear:focus {
-    background: #34495e;
-    color: #fff;
-  }
-  .content-more .btn.btn-clear:active,
-  .content-more .btn.btn-clear.active {
-    border-color: #415b76;
-    background: #415b76;
-    color: rgba(255, 255, 255, 0.75);
-  }
-</style>
 <section class="content-more">
   <div class="container">
-    <a class="btn btn-large btn-primary btn-clear" href="index.html#">Узнать больше</a>
+    <a class="btn btn-large btn-primary btn-clear" href="{{ path('front_page_show', { 'slug': 'learnmore' }) }}">Узнать больше</a>
   </div>
   <div class="divider">&nbsp;</div>
 </section>
@@ -320,7 +194,7 @@
     </div>
     <div class="row">
       <div class="col-sm-6">
-        <form action="{{ 1 | order_product_url }}" method="POST">
+        <form action="{{ 1 | product_order_url }}" method="POST">
           <div class="form-group">
             <label class="h6">Имя / Фамилия</label>
             <input name="name" type="text" required class="form-control">
@@ -358,88 +232,62 @@
     </div>
   </div>
 </section>
+{% endblock %}
+{% block stylesheets %}
+<style>
+.content-3 .container {
+  margin-top: 120px;
+}
+.content-3.a .quote {
+  padding-left: 10px;
+}
+.content-3.a .quote p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #2c3e50;
+}
+.content-3.a .quote:before {
+  content: '';
+  background: url("{{ 'common-files/icons/quote-up-mb@2x.png' | asset_url }}") no-repeat;
+  -webkit-background-size: 16px 10px;
+  -moz-background-size: 16px 10px;
+  -o-background-size: 16px 10px;
+  background-size: 16px 10px;
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  top: 10px;
+  left: 0px;
+}
+</style>
+<style type="text/css">
+.content-more .divider {
+  margin-bottom: 50px;
+}
 
-    {% endblock %}
-
-    <footer class="footer-1 bg-midnight-blue">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-5">
-            <p class="lead"><b>Ты</b> можешь больше</p>
-            <p><em>«Это было одно из самых важных переживаний в жизни»</em></p>
-            <p><em>«Вся жизнь разделилась на до и после»</em></p>
-            <p><em>«Я никогда не буду таким как прежде»</em></p>
-          </div>
-          <nav>
-            <div class="col-sm-2 col-sm-offset-1">
-              <h6>Категории</h6>
-              <ul>
-                <li><a href="index.html#">О нас</a>
-                </li>
-                <li><a href="index.html#">Блог</a>
-                </li>
-                <li><a href="index.html#">Команда</a>
-                </li>
-                <li><a href="index.html#">Работа</a>
-                </li>
-                <li><a href="index.html#">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-2">
-              <h6>Следуй за нами</h6>
-              <ul>
-                <li><a href="index.html#">Facebook</a>
-                </li>
-                <li><a href="index.html#">Twitter</a>
-                </li>
-                <li><a href="index.html#">Instagram</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div class="col-sm-2 buy-btn">
-            <a class="btn btn-danger btn-block" href="index.html#">Запишись</a>
-            или <a href="index.html#">Узнай Больше</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-5 additional-links">
-            <a href="index.html#">Оферта</a>
-            <a href="index.html#">Политика конфиденциальности</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{{ 'flat-ui/js/bootstrap.min.js' | asset_url }}"></script>
-    <script src="{{ 'common-files/js/modernizr.custom.js' | asset_url }}"></script>
-    <script src="{{ 'common-files/js/page-transitions.js' | asset_url }}"></script>
-    <script src="{{ 'common-files/js/jquery.backgroundvideo.min.js' | asset_url }}"></script>
-    <script src="{{ 'common-files/js/froogaloop.min.js' | asset_url }}"></script>
-    <script src="{{ 'common-files/js/jquery.scrollTo-1.4.3.1-min.js' | asset_url }}"></script>
-    <script src="{{ 'common-files/js/jquery.sharrre.min.js' | asset_url }}"></script>
-    <script src="{{ 'common-files/js/startup-kit.js' | asset_url }}"></script>
-    <script src="{{ 'site/jquery-validation-1.13.0/jquery.validate.min.js' | asset_url }}"></script>
-    <script type="text/javascript">
-        $.validator.setDefaults({
-            highlight: function(element) {
-                $(element).closest('.form-group').addClass('has-error');
-            },
-            unhighlight: function(element) {
-                $(element).closest('.form-group').removeClass('has-error');
-            },
-            errorElement: 'span',
-            errorClass: 'help-block',
-            errorPlacement: function(error, element) {
-                if(element.parent('.input-group').length) {
-                    error.insertAfter(element.parent());
-                } else {
-                    error.insertAfter(element);
-                }
-            }
-        });
-    </script>
-  </body>
-</html>
+.content-more .btn.btn-clear {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: none;
+  border: 2px solid #34495e;
+  font-size: 14px;
+  font-weight: normal;
+  font-weight: 500;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 12px 28px 12px;
+  color: #34495e;
+}
+.content-more .btn.btn-clear:hover,
+.content-more .btn.btn-clear:focus {
+  background: #34495e;
+  color: #fff;
+}
+.content-more .btn.btn-clear:active,
+.content-more .btn.btn-clear.active {
+  border-color: #415b76;
+  background: #415b76;
+  color: rgba(255, 255, 255, 0.75);
+}
+</style>
+{% endblock %}
